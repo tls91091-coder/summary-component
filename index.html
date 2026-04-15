@@ -1,52 +1,83 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+  <title>Order Summary Card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
   <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Red Hat Display', sans-serif;
+    }
 
-  <main>
-  <img src=" images/illustration-hero.svg" alt="illustration of person listening to music"
-  <h1>Order Summary</h1>
-  <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!</p>
-  <div> 
-  <img scr=" images/icon-music.svg" alt="musical note icon" 
-    
-  <p> Annual Plan</p>
-  <p> $59.99/year</p>
+    body {
+      background: hsl(225, 100%, 94%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
+    .card {
+      background: white;
+      border-radius: 15px;
+      width: 350px;
+      text-align: center;
+      overflow: hidden;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
 
-  <a href="#">Change</a>
-    
-  </div>
-  
-  
-  </main>
-  
+    .hero {
+      width: 100%;
+    }
 
+    .content {
+      padding: 25px;
+    }
 
+    h1 {
+      font-size: 22px;
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
 
-  
-  
+    .description {
+      color: hsl(224, 23%, 55%);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
 
-  Proceed to Payment
-  Cancel Order
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+    .plan-box {
+      background: hsl(225, 100%, 98%);
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .plan-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .plan-text {
+      text-align: left;
+    }
+
+    .plan-text p:first-child {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .plan-text p:last-child {
+      font-size: 13px;
+      color: hsl(224, 23%, 55%);
 </html>
