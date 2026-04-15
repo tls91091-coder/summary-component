@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -5,80 +6,43 @@
 
   <title>Order Summary Card</title>
 
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Link to CSS -->
   <link rel="stylesheet" href="styles.css">
+</head>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Red Hat Display', sans-serif;
-    }
+<body>
 
-    body {
-      background: hsl(225, 100%, 94%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+  <div class="card">
+    <img src="images/illustration-hero.svg" alt="music illustration" class="hero">
 
-    .card {
-      background: white;
-      border-radius: 15px;
-      width: 350px;
-      text-align: center;
-      overflow: hidden;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-    }
+    <div class="content">
+      <h1>Order Summary</h1>
 
-    .hero {
-      width: 100%;
-    }
+      <p class="description">
+        You can now listen to millions of songs, audiobooks, and podcasts 
+        on any device anywhere you like!
+      </p>
 
-    .content {
-      padding: 25px;
-    }
+      <div class="plan-box">
+        <div class="plan-info">
+          <img src="images/icon-music.svg" alt="music icon">
 
-    h1 {
-      font-size: 22px;
-      font-weight: 900;
-      margin-bottom: 15px;
-    }
+          <div class="plan-text">
+            <p>Annual Plan</p>
+            <p>$59.99/year</p>
+          </div>
+        </div>
 
-    .description {
-      color: hsl(224, 23%, 55%);
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
+        <a href="#" class="change">Change</a>
+      </div>
 
-    .plan-box {
-      background: hsl(225, 100%, 98%);
-      border-radius: 10px;
-      padding: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
+      <button class="btn-primary">Proceed to Payment</button>
+      <button class="btn-secondary">Cancel Order</button>
+    </div>
+  </div>
 
-    .plan-info {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .plan-text {
-      text-align: left;
-    }
-
-    .plan-text p:first-child {
-      font-weight: 700;
-      font-size: 14px;
-    }
-
-    .plan-text p:last-child {
-      font-size: 13px;
-      color: hsl(224, 23%, 55%);
+</body>
 </html>
